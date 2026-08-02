@@ -1,7 +1,7 @@
 # Vincent van Gogh Web Page
 ## Overview
 This project is a web page designed to showcase Van Gogh's masterworks, biography, and artistic style. It focuses on clean layout structure, rich visual aesthetics inspired by Van Gogh's iconic color palette, and smooth responsive design.
-I have written in during first semester of my studies without any AI or templates, fully from scratch to learn html and css languages.
+I have written it during first semester of my studies without any AI or templates, fully from scratch to learn html and css languages.
 
 ### Key Features
 
