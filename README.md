@@ -3,6 +3,8 @@
 This project is a web page designed to showcase Van Gogh's masterworks, biography, and artistic style. It focuses on clean layout structure, rich visual aesthetics inspired by Van Gogh's iconic color palette, and smooth responsive design.
 I have written it during first semester of my studies without any AI or templates, fully from scratch to learn html and css languages.
 
+<img width="1896" height="892" alt="image" src="https://github.com/user-attachments/assets/4f92490c-2433-4355-94a6-71a3e5dd138a" />
+
 ### Key Features
 
 * **Interactive Visuals:** Showcases famous masterpieces (like The Starry Night and Sunflowers).
