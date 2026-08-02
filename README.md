@@ -12,14 +12,14 @@ I have written it during first semester of my studies without any AI or template
 
 ---
 
-## 🛠️ Built With
+## Built With
 
 * **HTML5** – Semantic structure and content.
 * **CSS3** – Custom styling, Flexbox/Grid layouts, and smooth transitions.
 
 ---
 
-## 🚀 Quick Start
+## Start
 
 To view this project locally on your machine:
 
