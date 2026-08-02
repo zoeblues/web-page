@@ -1,0 +1,109 @@
+#shop-title {
+  font-size: 4.2rem;
+  line-height: 1.8;
+  margin-bottom: 0rem;
+  font-weight: 700;
+  color: #667d6d;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+#order-title {
+  color: #667d6d;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: calc(100% - 12px);
+  padding: 6px;
+  margin-bottom: 15px;
+  border: 1px solid #667d6d;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="radio"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+
+label[for="yes"],
+label[for="no"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #667d6d;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #2c362f;
+}
+input[type="checkbox"],
+label[for^="design"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+
+label,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  font-size: 16px;
+}
+
+.animated-rectangle {
+  width: 200px;
+  height: 100px;
+  background-color: #667d6d;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 10%; 
+  transform: translate(-50%, -50%);
+  animation: jump 3s ease infinite;
+}
+
+@keyframes jump {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  40%, 60% {
+    transform: translate(-50%, -50%) translateY(-30px);
+  }
+}

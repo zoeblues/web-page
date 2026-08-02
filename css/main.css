@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Playfair Display", serif;
+  line-height: 4;
+  font-weight: 400;
+  color: #333;
+}
+.main {
+  max-width: 130rem;
+  display: grid;
+  margin: 0 auto;
+  align-items: center;
+  gap: 9.6rem;
+  padding: 0 2.2rem;
+  grid-template-columns: 1fr 1fr;
+}
+.section-main {
+  padding: 4.8rem 0 9.6rem 0;
+  background-color: #edf1e5;
+}
+.section-bio {
+  padding: 9.6rem 0;
+  background-color: #d3e1d7;
+}
+.section-introduction {
+  padding: 9.6rem 0;
+  background-color: #edf1e5;
+}
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 500;
+  color: #667d6d;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1;
+  margin-bottom: 3.2rem;
+  position: relative;
+}
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+.heading-tertiary {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 6.2rem;
+}
+#movie-title {
+  font-size: 5.2rem;
+  line-height: 1.8;
+  margin-bottom: 0rem;
+  font-weight: 700;
+  color: #3a483e;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer {
+  background-color: #f6f8f2;
+  color: #333;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footer-text {
+  font-size: 1.6rem;
+}

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="artProject">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="mainHeader"/>
+                <xs:element ref="pageOne"/>
+                <xs:element ref="pageTwo"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="mainHeader">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="logo" type="logoType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="logoType">
+        <xs:attribute name="name" type="xs:string"/>
+        <xs:attribute name="src">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value=".*logo.*"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="imageType">
+        <xs:attribute name="name" type="xs:string"/>
+        <xs:attribute name="src" type="xs:anyURI"/>
+    </xs:complexType>
+    <xs:complexType name="jobImageType">
+        <xs:attribute name="name" type="jobType"/>
+        <xs:attribute name="src" type="xs:anyURI"/>
+    </xs:complexType>
+    <xs:element name="pageOne" type="pageOneType"/>
+    <xs:complexType name="pageOneType">
+        <xs:sequence>
+            <xs:element name="mainSection" type="mainSectionType"/>
+            <xs:element name="bioSection" type="bioSectionType"/>
+            <xs:element name="siteFooter" type="siteFooterType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="mainSectionType">
+        <xs:sequence>
+            <xs:element name="title" type="titleType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="titleType">
+        <xs:sequence>
+            <xs:element name="heading" type="longStringType"/>
+            <xs:element name="subheading" type="longStringType"/>
+            <xs:choice>
+                <xs:element name="image" type="imageType"/>
+                <xs:element name="text" type="extraLongStringType"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="bioSectionType">
+        <xs:sequence>
+            <xs:element name="heading" type="longStringType"/>
+            <xs:element name="container" type="containerType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="containerType">
+        <xs:sequence>
+            <xs:element name="biography" type="biographyType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="biographyType">
+        <xs:sequence>
+            <xs:element name="heading" type="longStringType"/>
+            <xs:group ref="textImage"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="positiveIntegerType"/>
+    </xs:complexType>
+    <xs:group name="textImage">
+        <xs:sequence>
+            <xs:element name="text" type="extraLongStringType"/>
+            <xs:element name="image" type="imageType"/>
+        </xs:sequence>
+    </xs:group>
+    <xs:complexType name="siteFooterType">
+        <xs:sequence>
+            <xs:element name="text">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:minLength value="5"/>
+                        <xs:maxLength value="60"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="pageTwo" type="pageTwoType"/>
+    <xs:complexType name="pageTwoType">
+        <xs:sequence>
+            <xs:element name="secondContent" type="secondContentType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="secondContentType">
+        <xs:sequence>
+            <xs:element name="title" type="titleType"/>
+            <xs:element name="movieCrewSection" type="movieCrewSectionType"/>
+            <xs:element name="links" type="linksType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="movieCrewSectionType">
+        <xs:sequence>
+            <xs:element name="person" type="personType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="personType">
+        <xs:sequence>
+            <xs:element ref="fullName"/>
+            <xs:element name="image" type="jobImageType"/>
+            <xs:element name="text" type="extraLongStringType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="fullName" type="fullNameType"/>
+    <xs:complexType name="fullNameType">
+        <xs:sequence>
+            <xs:element name="name" type="shortStringType"/>
+            <xs:element name="surname" type="longStringType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="linksType">
+        <xs:sequence>
+            <xs:element name="link" type="linkType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="linkType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="href" type="xs:anyURI"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:simpleType name="jobType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Director and Co-Writer"/>
+            <xs:enumeration value="Director and Producer"/>
+            <xs:enumeration value="Producer"/>
+            <xs:enumeration value="Cinematographer"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="positiveIntegerType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="shortStringType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="2"/>
+            <xs:maxLength value="30"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="longStringType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="6"/>
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="extraLongStringType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="150"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

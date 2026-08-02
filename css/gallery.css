@@ -1,0 +1,29 @@
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+.gallery {
+  display: grid;
+  padding: 6.4rem;
+  gap: 1.8rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.section-gallery {
+  padding: 0.2rem 0;
+}
+.gallery-item {
+  overflow: hidden;
+}
+#gallery-title {
+  font-size: 5.2rem;
+  line-height: 1.8;
+  margin-bottom: 0rem;
+  font-weight: 700;
+  color: #667d6d;
+  letter-spacing: 1.5px;
+  text-align: center;
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="art.xsd">
+    <mainHeader>
+        <logo name="warchol logo" src="img/logo.svg"/>
+    </mainHeader>
+    <pageOne>
+        <mainSection>
+            <title>
+                <heading>Vincent van Gogh</heading>
+                <subheading>The earth without art is just &apos;eh&apos;</subheading>
+                <image name="Van Gogh - Grünes Weizenfeld" src="img/main.jpeg"/>
+            </title>
+        </mainSection>
+        <bioSection>
+            <heading>Biography of Vincent</heading>
+            <container>
+                <biography id="1">
+                    <heading> General Information</heading>
+                    <text> 
+                            Vincent van Gogh, a Dutch post-impressionist painter born on March 30, 1853, 
+                            is renowned for his vivid artworks that encapsulate emotional depth and artistic brilliance.
+                            Van Gogh&apos;s artistic career began late in his life, and despite enduring personal struggles, he produced a vast collection of breathtaking artworks. His distinctive style was characterized by bold colors, dramatic brushwork, and emotional depth, reflecting his profound inner experiences and emotions.
+                            He found solace in painting scenes of rural life, landscapes, portraits, and still lifes, each piece infused with his unique vision and emotional intensity.
+                    </text>
+                    <image name="portrait of vincent" src="img/portrait.jpg"/>
+                </biography>
+                <biography id="2">
+                    <heading>Artistic Passion Amid Adversity </heading>
+                    <text> 
+                            During his lifetime, his art received limited recognition, and he battled with mental health issues, including bouts of depression and anxiety.Despite these challenges, Van Gogh&apos;s dedication to his craft remained unwavering. His artistic genius blossomed in his later years, producing some of his most renowned works like &quot;Starry Night,&quot; &quot;Sunflowers,&quot; &quot;The Bedroom,&quot; and numerous captivating self-portraits.
+                            Tragically, Vincent van Gogh&apos;s life was cut short when he passed away on July 29, 1890, at the age of 37, leaving behind an unparalleled legacy in the art world. His profound impact on art and his ability to convey raw emotion through his work continue to inspire and captivate audiences worldwide, solidifying his place as an icon of artistic brilliance and resilience.
+                    </text>
+                    <image name="self portrait with a bandage" src="img/self.jpg"/>
+                </biography>
+            </container>
+        </bioSection>
+        <siteFooter>
+            <text>Copyright © Zuzanna Warchoł, Data Engeneering, 197829</text>
+        </siteFooter>
+    </pageOne>
+    <pageTwo>
+        <secondContent>
+            <title>
+                <heading> Loving Vincent</heading>
+                <subheading>The world&apos;s first fully painted film</subheading>
+                <text>&quot;Loving Vincent&quot; is a groundbreaking animated film released in 2017. Directed by Dorota Kobiela and Hugh Welchman, it&apos;s the first fully painted animated feature, bringing Vincent van Gogh&apos;s art to life through hand-painted frames resembling his iconic paintings. The movie follows a young man investigating Van Gogh&apos;s death, unraveling the artist&apos;s life and emotions through encounters with individuals from his past. Celebrated for its unique artistry and storytelling, &quot;Loving Vincent&quot; stands as a cinematic tribute to the legendary painter</text>
+            </title>
+            <movieCrewSection>
+                <person>
+                    <fullName>
+                        <name>Dorota</name>
+                        <surname>Kobiela</surname>
+                    </fullName>
+                    <image name="Director and Co-Writer" src="img/dorota.jpg"/>
+                    <text>As one of the directors of &quot;Loving Vincent,&quot; Kobiela played a pivotal role in bringing the innovative concept of a fully painted animated film to life. She co-wrote the screenplay and directed the film, contributing to its artistic vision and execution.
+                    </text>
+                </person>
+                <person>
+                    <fullName>
+                        <name>Hugh</name>
+                        <surname>Welchman</surname>
+                    </fullName>
+                    <image name="Director and Producer" src="img/hugh.jpg"/>
+                    <text>
+                        Welchman co-directed and produced &quot;Loving Vincent.&quot; He was instrumental in overseeing the production, managing the project&apos;s logistics, and ensuring the film&apos;s artistic integrity throughout its development.
+                    </text>
+                </person>
+                <person>
+                    <fullName>
+                        <name>Ivan</name>
+                        <surname>Mactaggart</surname>
+                    </fullName>
+                    <image name="Producer" src="img/ivan.jpg"/>
+                    <text>
+                        Ivan Mactaggart was one of the producers of &quot;Loving Vincent.&quot; His contributions to the production process and collaboration with the directors and artists were crucial in realizing the ambitious vision of the film.
+                    </text>
+                </person>
+                <person>
+                    <fullName>
+                        <name>Sean</name>
+                        <surname>Bobbitt</surname>
+                    </fullName>
+                    <image name="Cinematographer" src="img/sean.jpg"/>
+                    <text> 
+                        Sean Bobbitt served as the film&apos;s cinematographer. His expertise in visual storytelling and cinematography techniques was vital in translating the unique hand-painted frames into a cohesive and visually stunning animated narrative.
+                    </text>
+                </person>
+            </movieCrewSection>
+            <links>
+                <link href="#top">go to the top of the page</link>
+                <link href="#movie-title">go to the movie title</link>
+                <link href="https://www.filmweb.pl/film/Tw%C3%B3j+Vincent-2017-698207">filmweb</link>
+                <link href="https://lovingvincent.com/">official page</link>
+            </links>
+        </secondContent>
+    </pageTwo>
+</artProject>
